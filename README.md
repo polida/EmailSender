@@ -104,7 +104,7 @@ __VP__ = __MB__ * (__UT__ / __CPT__)
 
 ## ⚙️ Jak spustit automatizované hodnocení lokálně na svém počítači?
 
-Automatizované hodnocení můžete spustit lokálně za účelem ověření funkčnosti vaší aplikace. K tomu slouží předpřipravený skript, který je dostupný v repozitáři tohoto úkolu. Výsledný report testování se bude nacházet v souboru ```local_test.xml```.
+Automatizované hodnocení můžete spustit lokálně za účelem ověření funkčnosti vaší aplikace. K tomu slouží předpřipravený skript, který je dostupný v repozitáři tohoto úkolu. Výsledný report testování se bude nacházet v souboru ```test_report.html```.
 
 ###  Pro uživatele systému Linux:
 Spusťte skript s názvem ```run_local_test.sh```.
