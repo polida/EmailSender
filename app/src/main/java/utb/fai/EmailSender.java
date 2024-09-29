@@ -3,7 +3,7 @@ package utb.fai;
 import java.net.*;
 import java.io.*;
 
-public class EmailSender {
+public class  EmailSender {
     /*
      * Constructor opens Socket to host/port. If the Socket throws an exception
      * during opening,
@@ -29,13 +29,13 @@ public class EmailSender {
 
         out.println("HELO utb.cz");
         in.readLine();
-        out.println("MAIL FROM: " + from);
+        out.println("MAIL FROM:<" + from + ">\r\n");
         in.readLine();
-        out.println("RCPT TO: " + to);
+        out.println("RCPT TO:<" + to + ">\r\n");
         in.readLine();
-        out.println("DATA");
+        out.println("DATA" + "\r\n");
         in.readLine();
-        out.println("Subject: " + subject);
+        out.println("Subject: " + subject + "\r\n" + "\r\n");
         out.println(text);
         out.println(".");
         in.readLine();
