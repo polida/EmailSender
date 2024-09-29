@@ -10,7 +10,7 @@ public class EmailSender {
      * the exception is not handled in the constructor.
      */
     private Socket socket;
-    private final String host;
+    private String host;
 
     public EmailSender(String host, int port) throws IOException, InterruptedException {
         // Otevření socketu
